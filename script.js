@@ -59,15 +59,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const isExpanded = aboutToggle.getAttribute('aria-expanded') === 'true';
 
             if (isExpanded) {
-                // 閉じる
+                // Close
                 aboutToggle.setAttribute('aria-expanded', 'false');
                 aboutExpanded.hidden = true;
-                aboutToggle.innerHTML = 'プロフィールをもう少し読む <span class="arrow">↓</span>';
+                aboutToggle.innerHTML = 'Read more about my story <span class="arrow">↓</span>';
             } else {
-                // 開く
+                // Open
                 aboutToggle.setAttribute('aria-expanded', 'true');
                 aboutExpanded.hidden = false;
-                aboutToggle.innerHTML = '閉じる <span class="arrow">↑</span>';
+                aboutToggle.innerHTML = 'Close <span class="arrow">↑</span>';
 
                 // スムーズにスクロール（展開したコンテンツの先頭へ）
                 setTimeout(() => {
