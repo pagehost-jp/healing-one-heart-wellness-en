@@ -87,6 +87,42 @@ healing-one-heart-lp-en/
 └── README.md       # This file
 ```
 
+## Development History
+
+### February 2026
+
+**Initial Translation & Setup**
+- Complete translation from Japanese version
+- Font change: Noto Sans JP → Cormorant Garamond + Open Sans
+- All sections translated: hero, empathy, philosophy, about, testimonials, bridge, courses, FAQ, story, CTA, footer
+- Repository created: healing-one-heart-wellness-en
+- GitHub Pages enabled: https://pagehost-jp.github.io/healing-one-heart-wellness-en/
+
+**SEO Optimization**
+- Title tag optimization: "Mari Fugate | Holistic Health Coach | Gut Health & Mind-Body Wellness for Women Over 50"
+- Meta description with target keywords
+- Image alt attributes updated with SEO keywords
+  - Profile: "Mari Fugate - Holistic Health Coach specializing in gut health and mind-body wellness"
+  - Programs: "Mental Block Release Program - Subconscious healing", "Reverse Aging Detox Program - Natural healing"
+- Google Search Console verification tag added
+- Meta keywords with name variations
+  - Mari Fugate, fugatemari, Fugate Mari, mari fugate
+  - Keywords: holistic health coach, gut health, mind-body wellness, women over 50, subconscious healing
+
+**UI/UX Improvements**
+- Philosophy section title line breaks for better visual balance
+  - "Not about fixing, curing, or changing" → 2 lines
+  - "Remembering, harmonizing, returning" → 2 lines
+  - "Walking alongside you" → 2 lines with blank space
+- Courses intro text line break optimization (3 balanced lines)
+- Button text localization: "Close" instead of "閉じる"
+
+**Assets & Dependencies**
+- All image assets copied from Japanese version
+- style.css and script.js copied and adapted
+- Modal functionality for certificate images
+- Smooth scroll animations maintained
+
 ## License
 
 © 2025 Healing One Heart Wellness. All rights reserved.
