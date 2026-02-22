@@ -197,47 +197,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // 画像拡大モーダル機能
-    const modal = document.getElementById('imageModal');
-    const modalImg = modal.querySelector('.image-modal-img');
-    const modalClose = modal.querySelector('.image-modal-close');
-    const modalOverlay = modal.querySelector('.image-modal-overlay');
-    const certificateImages = document.querySelectorAll('.credential-certificate');
-
-    // 証明書画像をクリックしたらモーダルを開く
-    certificateImages.forEach(img => {
-        img.addEventListener('click', () => {
-            modal.hidden = false;
-            modalImg.src = img.src;
-            modalImg.alt = img.alt;
-            // bodyのスクロールを防止
-            document.body.style.overflow = 'hidden';
-        });
-    });
-
-    // 閉じるボタンをクリック
-    modalClose.addEventListener('click', () => {
-        closeModal();
-    });
-
-    // オーバーレイをクリック
-    modalOverlay.addEventListener('click', () => {
-        closeModal();
-    });
-
-    // Escキーで閉じる
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !modal.hidden) {
-            closeModal();
-        }
-    });
-
-    // モーダルを閉じる関数
-    function closeModal() {
-        modal.hidden = true;
-        modalImg.src = '';
-        // bodyのスクロールを復元
-        document.body.style.overflow = '';
-    }
 });
